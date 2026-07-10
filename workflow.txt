@@ -1,0 +1,17 @@
+Local Bash
+     │
+     ▼
+Git repository
+     │
+git push
+     ▼
+GitHub
+     │
+GitHub Action runs every morning
+     │
+curl POST request
+     ▼
+Discord Webhook
+     │
+     ▼
+Private Discord message/channel
