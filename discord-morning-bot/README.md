@@ -1,1 +1,0 @@
-# Daily Affirmation Bot
