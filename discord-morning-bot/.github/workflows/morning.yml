@@ -1,0 +1,19 @@
+name: Morning Discord Affirmation
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Affirmation
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"content":"You look really nice today"}' \
+          ${{ secrets.DISCORD_WEBHOOK }}
